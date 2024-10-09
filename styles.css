@@ -1,0 +1,173 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #1f0039, #07000f, #0a0a0a);
+    background-image: url('imagenes/Logo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column; 
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column; 
+}
+
+h1 {
+    color: #0f0396;
+    font-size: 3em;
+    margin-bottom: 500px;
+    text-align: center;
+    text-shadow: 0 0 10px #057b67, 0 0 30px #1fde6f;
+    margin-bottom: 30px;
+    animation: neon-flicker 1.5s infinite alternate;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+form {
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+p {
+    margin: 0;
+    position: relative;
+}
+
+label {
+    font-weight: 700;
+    color: #04483b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #0080ff;
+    background: transparent;
+    color: #0a0808;
+    font-size: 1.1em;
+    
+    transition: border-color 0.4s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #254aef;
+    box-shadow: 0 0 15px #254aef;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid #3700ff;
+    color: #064fbd;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #0dddcc, 0 0 20px #00d0ff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #3211d6;
+    color: #000;
+    box-shadow: 0 0 30px #e57607, 0 0 60px #00ffcc;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: #ff007a;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group label {
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+i {
+    margin-right: 8px;
+    color: #00ffcc;
+    font-size: 1.2em;
+}
+
+p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff007a, #00ffcc);
+    top: -8px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+p:hover::before {
+    opacity: 1;
+    height: 2px;
+}
+
+/* Animación flicker del título */
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 0 0 10px #1212da, 0 0 30px #91d5b055;
+    }
+    50% {
+        text-shadow: 0 0 20px #1212da, 0 0 60px #1bba7d89;
+    
+    }
+    100% {
+        text-shadow: 0 0 30px #1212da, 0 0 90px #1212da;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        margin-left: 0;
+    }
+}

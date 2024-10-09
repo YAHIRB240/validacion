@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrese al tec</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>REGISTRO</h1>
+    <form action="" method="">
+        <p><label for="nombre">Nombre: <input type="text" id="nombre" name="nombre"></label></p>
+        <p><label for="apellidos">Apellidos:<input type="text" id="apellidos" name="apellidos"></label></p>
+        <p><label for="n-control">Numero de control:<input type="text" id="n-control" name="n-control"></label></p>
+        <p><label for="correo">Correo:<input type="email" id="correo" name="correo"></label></p>
+        <p><label for="telefono">Telefono:<input type="text" id="telefono" name="telefono"></label></p>
+        <p><label for="direcion">Direccion:<input type="text" id="direcion" name="direcion"></label></p>
+        <p><label for="fecha-nacimiento">Fecha de Nacimiento:<input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                <p><label for="carreras">Carrera:
+                        <select name="carrera" id="carrera">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="1">Ingenieria En Sistemas </option>
+                            <option value="2">Ingenieria En Agronomia </option>
+                            <option value="3">Biologia </option>
+                            <option value="4">Gestion Empresarial </option>
+                        </select>
+                    </label></p>
+                <p><label for="periodo">Periodo Escolar De Ingreso:
+                        <select name="periodo" id="periodo">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="1">AGO-DIC 2019 </option>
+                            <option value="2">AGO-DIC 2020 </option>
+                            <option value="3">AGO-DIC 2021 </option>
+                            <option value="4">AGO-DIC 2022 </option>
+                            <option value="5">AGO-DIC 2023 </option>
+                            <option value="6">AGO-DIC 2024 </option>
+                        </select>
+                    </label></p>
+                    <p><b>Sexo:</b></p>
+                    <div class="radio-group">
+                        <input type="radio" id="masculino" name="sexo" value="1">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="sexo" value="2">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="indefinido" name="sexo" value="3">
+                        <label for="indefinido">Otros</label>
+                    </div>
+                <button type="submit">Registro</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
